@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>やってみようハンドボール！！｜HC江津 無料体験会</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Zen Maru Gothic"', 'sans-serif'],
+                        pop: ['"Fredoka"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            orange: '#FF7A00',
+                            yellow: '#FFC800',
+                            blue: '#00A3FF',
+                            pink: '#FF6B9E',
+                            light: '#FFF9F0',
+                            dark: '#333333',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: '"Zen Maru Gothic"', sans-serif; }
+        h1, h2, h3 { font-weight: 900 !important; }
+        .pattern-dots {
+            background-color: #FFF9F0;
+            background-image: radial-gradient(#FFC800 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+        .pattern-wavy {
+            background-color: #ffffff;
+            opacity: 0.8;
+            background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 10px ), repeating-linear-gradient( #FFF9F055, #FFF9F055 );
+        }
+        .btn-bounce:hover {
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(-5%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+            50% { transform: translateY(0); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+        }
+        .pop-shadow {
+            box-shadow: 6px 6px 0px rgba(0,0,0,0.1);
+        }
+        .pop-border {
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-brand-light">
+
+    <!-- Header / Hero Section -->
+    <header class="relative pt-16 pb-20 px-4 overflow-hidden border-b-8 border-brand-orange">
+        <!-- Video Background -->
+        <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <source src="プロジェクト.MP4" type="video/mp4">
+        </video>
+        <!-- Overlay to make text readable -->
+        <div class="absolute inset-0 bg-white/70 z-0"></div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute top-10 left-10 text-brand-blue opacity-50 text-5xl transform -rotate-12 z-10"><i class="fa-solid fa-star"></i></div>
+        <div class="absolute bottom-20 right-10 text-brand-pink opacity-50 text-6xl transform rotate-12 z-10"><i class="fa-solid fa-circle"></i></div>
+        <div class="absolute top-40 right-20 text-brand-yellow opacity-80 text-4xl transform rotate-45 z-10"><i class="fa-solid fa-play"></i></div>
+        
+        <div class="max-w-5xl mx-auto relative z-10 text-center">
+            <div class="inline-block bg-brand-pink text-white text-sm md:text-base font-bold px-6 py-2 rounded-full mb-6 transform -rotate-2 shadow-sm">
+                初心者大歓迎！
+            </div>
+            
+            <h1 class="text-[18px] sm:text-3xl md:text-5xl lg:text-6xl text-brand-dark leading-snug mb-4 tracking-tight">
+                <span class="inline-block whitespace-nowrap">走って、投げて、思いっきり楽しもう！</span><br>
+                <span class="text-brand-orange text-[23px] sm:text-4xl md:text-6xl lg:text-7xl mt-2 sm:mt-4 inline-block drop-shadow-md whitespace-nowrap">
+                    やってみようハンドボール！！
+                </span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-600 mb-12 bg-white/80 inline-block px-6 py-2 rounded-full">
+                年長〜小学6年生対象 無料体験会
+            </p>
+            
+            <div class="bg-white border-4 border-brand-yellow rounded-3xl p-8 max-w-3xl mx-auto pop-shadow transform rotate-1 hover:rotate-0 transition-transform">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="text-center md:text-left w-full md:w-auto">
+                        <p class="font-pop text-brand-orange text-lg mb-1 inline-block bg-orange-100 px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-check mr-2"></i>Next event</p>
+                        <p class="font-pop text-4xl md:text-5xl text-brand-dark mt-2">2026.3.28 <span class="text-xl text-gray-400 ml-1">SAT</span></p>
+                        <p class="text-gray-600 mt-2 font-bold"><i class="fa-solid fa-location-dot text-brand-blue mr-2"></i>江津市立青陵中学校体育館</p>
+                    </div>
+                    <div class="w-full md:w-auto">
+                        <a href="#apply" class="btn-bounce inline-flex items-center justify-center bg-[#06C755] text-white font-black text-lg px-8 py-4 w-full md:w-auto rounded-full shadow-[0_6px_0_#048f3c] hover:translate-y-1 hover:shadow-[0_2px_0_#048f3c] transition-all">
+                            <i class="fa-brands fa-line text-2xl mr-2"></i> ENTRY
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Catch Message -->
+    <section class="py-20 px-4 bg-white text-center relative z-0">
+        <div class="max-w-3xl mx-auto pop-border border-4 border-gray-100 p-6 sm:p-8 md:p-12">
+            <h2 class="text-[19px] sm:text-2xl md:text-4xl mb-8 leading-relaxed text-brand-dark tracking-tight">
+                <span class="inline-block break-keep">「何かスポーツをさせたい」</span><br>
+                <span class="inline-block break-keep">「うちの子、運動苦手かも…」</span><br>
+                <span class="text-brand-orange mt-3 sm:mt-4 inline-block break-keep">その不安、ここで吹き飛ばそう。</span>
+            </h2>
+            <p class="text-lg text-gray-600 leading-loose text-left md:text-center">
+                ハンドボールは、ボール遊びの延長で熱狂できるスポーツ。<br>
+                最初はうまく投げられなくても問題なし。<br>
+                コーチと仲間が、君の「楽しい！」を引き出します。
+            </p>
+        </div>
+    </section>
+
+    <!-- Handball Appeal -->
+    <section class="py-24 px-4 bg-brand-light relative overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="inline-block text-[22px] sm:text-3xl md:text-5xl text-white bg-brand-blue px-6 sm:px-8 py-3 sm:py-4 rounded-full transform -rotate-2 shadow-lg whitespace-nowrap">
+                    ハンドボールの魅力！
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Point 1 -->
+                <div class="bg-white border-4 border-brand-orange rounded-3xl p-6 sm:p-8 text-center pop-shadow hover:-translate-y-2 transition-transform group">
+                    <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-orange-100 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-person-running text-4xl sm:text-5xl text-brand-orange"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl lg:text-2xl mb-3 sm:mb-4 text-brand-dark tracking-tight w-full break-keep">走る！飛ぶ！投げる！</h3>
+                    <p class="text-gray-600 text-[13px] sm:text-sm leading-relaxed">
+                        すべての運動の基本が自然に身につく。<br>全身を使って思いっきり動く、最強の体力づくり。
+                    </p>
+                </div>
+                <!-- Point 2 -->
+                <div class="bg-white border-4 border-brand-pink rounded-3xl p-6 sm:p-8 text-center pop-shadow hover:-translate-y-2 transition-transform group">
+                    <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-pink-100 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users text-4xl sm:text-5xl text-brand-pink"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl lg:text-2xl mb-3 sm:mb-4 text-brand-dark tracking-tight w-full break-keep">仲間と協力する楽しさ</h3>
+                    <p class="text-gray-600 text-[13px] sm:text-sm leading-relaxed">
+                        パスをつなぎ、ゴールを目指す。仲間との絆、<br>思いやり、コミュニケーション能力を養う。
+                    </p>
+                </div>
+                <!-- Point 3 -->
+                <div class="bg-white border-4 border-brand-yellow rounded-3xl p-6 sm:p-8 text-center pop-shadow hover:-translate-y-2 transition-transform group">
+                    <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-meteor text-4xl sm:text-5xl text-brand-yellow"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl lg:text-2xl mb-3 sm:mb-4 text-brand-dark tracking-tight w-full break-keep">シュートの爽快感！</h3>
+                    <p class="text-gray-600 text-[13px] sm:text-sm leading-relaxed">
+                        キーパーの隙を突く豪快なシュート。ネットを<br>揺らした瞬間の興奮が、確かな自信に変わる。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Event -->
+    <section class="py-24 px-4 bg-white pattern-wavy">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="font-pop text-brand-pink text-lg mb-2 block tracking-widest">PREVIOUS EVENT</span>
+                <h2 class="text-3xl md:text-4xl text-brand-dark">
+                    前回の体験会の様子
+                </h2>
+            </div>
+            
+            <div class="max-w-sm mx-auto bg-white p-3 md:p-4 border-4 border-brand-blue rounded-3xl pop-shadow transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                <!-- Instagram Iframe -->
+                <iframe src="https://www.instagram.com/reel/DVPoy0GiWVT/embed" width="100%" height="580" frameborder="0" scrolling="no" allowtransparency="true" class="bg-white w-full rounded-2xl"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="py-24 px-4 bg-brand-light">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl text-brand-dark border-b-4 border-brand-yellow inline-block pb-2">
+                    体験会について
+                </h2>
+            </div>
+            
+            <div class="bg-white border-4 border-gray-200 rounded-3xl p-8 md:p-12 shadow-lg">
+                <dl class="space-y-6">
+                    <div class="flex flex-col md:flex-row border-b-2 border-dashed border-gray-200 pb-4 items-center md:items-start">
+                        <dt class="w-full md:w-1/4 mb-2 md:mb-0"><span class="bg-gray-100 text-gray-600 px-4 py-1 rounded-full text-sm">対象</span></dt>
+                        <dd class="w-full md:w-3/4 text-gray-800 text-lg text-center md:text-left">年長〜小学校6年生（男女問わず）<br><span class="text-sm text-brand-pink mt-1 inline-block"><i class="fa-solid fa-heart mr-1"></i>未経験のお子さま大歓迎！</span></dd>
+                    </div>
+                    <div class="flex flex-col md:flex-row border-b-2 border-dashed border-gray-200 pb-4 items-center md:items-start">
+                        <dt class="w-full md:w-1/4 mb-2 md:mb-0"><span class="bg-gray-100 text-gray-600 px-4 py-1 rounded-full text-sm">開催時間</span></dt>
+                        <dd class="w-full md:w-3/4 text-center md:text-left">
+                            <span class="font-pop text-2xl text-brand-dark block mb-3">2026.3.28 SAT</span>
+                            <div class="bg-brand-light p-4 rounded-xl space-y-2 inline-block text-left w-full md:w-auto">
+                                <p><span class="inline-block w-28 text-brand-orange"><i class="fa-regular fa-clock mr-1"></i>13:10〜14:25</span> 年長〜小学3年生</p>
+                                <p><span class="inline-block w-28 text-brand-orange"><i class="fa-regular fa-clock mr-1"></i>14:30〜15:50</span> 小学4年生〜6年生</p>
+                            </div>
+                        </dd>
+                    </div>
+                    <div class="flex flex-col md:flex-row border-b-2 border-dashed border-gray-200 pb-4 items-center md:items-start">
+                        <dt class="w-full md:w-1/4 mb-2 md:mb-0"><span class="bg-gray-100 text-gray-600 px-4 py-1 rounded-full text-sm">開催場所</span></dt>
+                        <dd class="w-full md:w-3/4 text-gray-800 text-lg text-center md:text-left">江津市立青陵中学校 体育館</dd>
+                    </div>
+                    <div class="flex flex-col md:flex-row border-b-2 border-dashed border-gray-200 pb-4 items-center md:items-start">
+                        <dt class="w-full md:w-1/4 mb-2 md:mb-0"><span class="bg-gray-100 text-gray-600 px-4 py-1 rounded-full text-sm">持ち物</span></dt>
+                        <dd class="w-full md:w-3/4 text-gray-800 text-lg text-center md:text-left">室内用シューズ、飲み物、タオル、動きやすい服装</dd>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center md:items-start pt-2">
+                        <dt class="w-full md:w-1/4 mb-2 md:mb-0"><span class="bg-gray-100 text-gray-600 px-4 py-1 rounded-full text-sm">参加費</span></dt>
+                        <dd class="w-full md:w-3/4 text-4xl text-brand-orange text-center md:text-left">無料</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Introduction -->
+    <section class="py-24 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="font-pop text-brand-blue text-lg mb-2 block tracking-widest">TEAMS</span>
+                <h2 class="text-3xl md:text-4xl text-brand-dark">チーム紹介</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Team 1 -->
+                <a href="https://www.instagram.com/hc.gotsu.junior?igsh=MTJja3pqZHp2YXQ5aA==" target="_blank" class="bg-white border-2 border-gray-100 hover:border-brand-orange rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all group flex items-center justify-between">
+                    <div>
+                        <span class="text-brand-orange font-pop text-sm tracking-widest block mb-1">U-12</span>
+                        <h3 class="text-lg lg:text-xl text-brand-dark">小学生チーム</h3>
+                    </div>
+                    <div class="w-12 h-12 shrink-0 ml-2 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                    </div>
+                </a>
+
+                <!-- Team 2 -->
+                <a href="https://www.instagram.com/hc.gotsu.youth?igsh=bWd4ZDZsY3E4dHFj" target="_blank" class="bg-white border-2 border-gray-100 hover:border-brand-blue rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all group flex items-center justify-between">
+                    <div>
+                        <span class="text-brand-blue font-pop text-sm tracking-widest block mb-1">U-15 BOYS</span>
+                        <h3 class="text-lg lg:text-xl text-brand-dark">中学生 男子チーム</h3>
+                    </div>
+                    <div class="w-12 h-12 shrink-0 ml-2 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                    </div>
+                </a>
+
+                <!-- Team 3 -->
+                <a href="https://www.instagram.com/hc_gotsu_u15girls?igsh=MWU3NjNqMWc3MTNscg==" target="_blank" class="bg-white border-2 border-gray-100 hover:border-brand-pink rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all group flex items-center justify-between">
+                    <div>
+                        <span class="text-brand-pink font-pop text-sm tracking-widest block mb-1">U-15 GIRLS</span>
+                        <h3 class="text-lg lg:text-xl text-brand-dark">中学生 女子チーム</h3>
+                    </div>
+                    <div class="w-12 h-12 shrink-0 ml-2 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section (LINE) -->
+    <section id="apply" class="py-20 md:py-24 px-4 bg-brand-orange text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-[22px] sm:text-3xl md:text-5xl mb-6 tracking-tight inline-block break-keep">さあ、一緒に楽しもう！</h2>
+            <p class="mb-8 md:mb-10 text-white bg-white/20 inline-block px-4 py-2 md:px-6 md:py-2 rounded-full font-bold text-sm md:text-base">申し込みは公式LINEから</p>
+            <br>
+            <a href="https://lin.ee/cq7NnCu" target="_blank" rel="noopener noreferrer" class="btn-bounce inline-flex items-center justify-center bg-[#06C755] text-white font-black text-xl md:text-2xl px-8 py-5 md:px-12 md:py-6 rounded-full shadow-[0_6px_0_#048f3c] md:shadow-[0_8px_0_#048f3c] hover:shadow-[0_4px_0_#048f3c] hover:translate-y-1 transition-all w-full sm:w-auto border-4 border-white">
+                <i class="fa-brands fa-line text-3xl md:text-4xl mr-2 md:mr-3"></i> LINEで申し込む
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 px-4 text-center">
+        <p class="text-xl mb-2">やってみようハンドボール！！</p>
+        <p class="text-sm text-gray-400">主催：HC江津</p>
+        <p class="font-pop text-xs text-gray-600 mt-8 tracking-widest">&copy; 2026 HC GOTSU. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
